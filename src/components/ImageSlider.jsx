@@ -26,7 +26,7 @@ function ImageSlider({ images }) {
   return (
     <section
       aria-label="Image Slider"
-      style={{ width: "100%", height: "100%", position: "relative" }}
+      style={{ width: "80%", height: "auto", position: "relative", margin: "0 auto" }}
     >
       <a href="#after-image-slider-controls" className="skip-link">
         Skip Image Slider Controls
@@ -34,7 +34,7 @@ function ImageSlider({ images }) {
       <div
         style={{
           width: "100%",
-          height: "100%",
+          height: "auto",
           display: "flex",
           overflow: "hidden",
         }}
