@@ -6,9 +6,9 @@
 
 .img-slider-img {
   object-fit: cover;
-  aspect-ratio: 16 / 6;
   width: 100%;
   height: auto;
+  aspect-ratio: 16 / 5;
   display: block;
   flex-shrink: 0;
   flex-grow: 0;
@@ -70,6 +70,15 @@
   outline: auto;
 }
 
+.cta-container {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+}
+
 .skip-link {
   position: absolute;
   width: 1px;
@@ -96,13 +105,13 @@
   z-index: 100;
 }
 
-.img-slider-btn:active > *,
-  .img-slider-btn:focus-visible > * {
-    animation: squish 300ms ease-in-out;
-  }
-
 @media not (prefers-reduced-motion) {
   .img-slider-img {
     transition: transform 300ms ease-in-out;
+  }
+
+  .img-slider-btn:hover > *,
+  .img-slider-btn:focus-visible > * {
+    animation: squish 200ms ease-in-out;
   }
 }

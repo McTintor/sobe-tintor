@@ -2,42 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background: #FFFFFF;
-  color: #2c3e50;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-
-nav, footer {
-  background-color: #F7F7F7;
-  color: black;
-  padding: 1rem;
-}
-
-.navbar {
-  padding: 1rem;
-  margin-bottom: 1rem;
-  font-weight: bold;
-}
-
-ul, ol {
-  list-style: none;
-}
-
-ul {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-
-li > a {
-  all: unset;
-  cursor: pointer;
-  color: #FF4C4C;
-}
-
-li > a:hover {
-  color: #B22C2C;
 }
 
 button {
@@ -46,6 +11,8 @@ button {
   border: none;
   padding: 0.5rem 1rem;
   cursor: pointer;
+  border-radius: 4px;
+  min-width: 8rem;
 }
 
 button:hover {

@@ -6,8 +6,12 @@ function ImageSlider({ images }) {
   const [imageIndex, setImageIndex] = useState(0);
 
   useEffect(() => {
-    console.log("Images prop:", images);
-  }, [images]);
+    const interval = setInterval(() => {
+      showNextImage();
+    }, 8000);
+
+    return () => clearInterval(interval);
+  }, [imageIndex]);
 
   function showNextImage() {
     setImageIndex((index) => {
@@ -26,7 +30,7 @@ function ImageSlider({ images }) {
   return (
     <section
       aria-label="Image Slider"
-      style={{ width: "80%", height: "auto", position: "relative", margin: "0 auto" }}
+      style={{ width: "100%", height: "auto", position: "relative", margin: "0 auto" }}
     >
       <a href="#after-image-slider-controls" className="skip-link">
         Skip Image Slider Controls
@@ -66,7 +70,12 @@ function ImageSlider({ images }) {
       >
         <ArrowBigRight aria-hidden />
       </button>
+      <div className="cta-container">
+        <button>CTA 1</button>
+        <button>CTA 2</button>
+      </div>
       <div
+        className="dot-container"
         style={{
           position: "absolute",
           bottom: ".5rem",
