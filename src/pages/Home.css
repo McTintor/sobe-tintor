@@ -1,3 +1,47 @@
 .home {
     min-height: 100vh;
 }
+
+.home-cards {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.home-card {
+    display: flex;
+    flex-direction: column;
+    width: 22.5%;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+.img-card { 
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img-card > img {
+    width: 60%;
+    height: auto;
+}
+
+.home-card-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}

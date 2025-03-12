@@ -19,7 +19,7 @@ nav, footer {
   }
   
   .navbar:hover {
-    background-color: #f7f7f710;
+    background-color: #f7f7f731;
     transition: ease-in-out 0.3s;
   }
   
@@ -65,17 +65,10 @@ nav, footer {
     padding: 0.5rem 1rem;
     font-size: 1rem;
     font-weight: bold;
-    border-radius: 4px;
   }
   
-  .navbar-links a:hover {
-    color: white;
-    background-color: #B22C2C;
-  }
-  
-  .navbar-links a.active {
-    color: white;
-    background-color: #FF4C4C;
+  .navbar-links a.active, .navbar-links a:hover {
+    border-bottom: 2px solid #B22C2C;
   }
   
   .hamburger-menu {

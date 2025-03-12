@@ -36,10 +36,11 @@ const Navbar = () => {
             <div className='navbar-logo'>
                 <img src="/logo.png" alt="Logo" onClick={pageReload} />
                 <h3><i>Sobe Tintor</i></h3>
-                <button className="hamburger-menu" onClick={toggleMobileMenu}>
+                
+            </div>
+            <button className="hamburger-menu" onClick={toggleMobileMenu}>
                     ☰
                 </button>
-            </div>
             <ul className={`navbar-links ${isMobileMenuOpen ? "open" : ""}`}>
                 <li><a href="#pocetna" className={activeLink === '#pocetna' ? 'active' : ''} onClick={() => handleLinkClick('#pocetna')}>Početna</a></li>
                 <li><a href="#onama" className={activeLink === '#onama' ? 'active' : ''} onClick={() => handleLinkClick('#onama')}>O nama</a></li>
