@@ -19,7 +19,7 @@ const IMAGES = [
 const Home = () => {
     return (
         <>
-        <div className="home">
+        <div className="home" aria-label='Home'>
             <ErrorBoundary>
                 <ImageSlider images={IMAGES} />
             </ErrorBoundary>
@@ -30,7 +30,7 @@ const Home = () => {
                     </div>
                     <div className='home-card-text'>
                         <h2>15+ Godina sa Vama</h2>
-                        <p>Počevši od 2007. godine od samog osnivanja prenoćišta intenzivno vodimo računa kako bi gosti uvek imali najbolje iskustvo. Zato nam gosti daju njihovo poverenje iz godine u godinu.</p>
+                        <p>Počevši od 2007. godine od samog osnivanja prenoćišta intenzivno vodimo računa kako bi gosti uvek imali najbolje ugostiteljsko iskustvo. Zato nam gosti daju njihovo poverenje iz godine u godinu.</p>
                     </div>
                 </div>
                 <div className="home-card">
