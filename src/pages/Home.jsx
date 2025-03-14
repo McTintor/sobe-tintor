@@ -30,7 +30,7 @@ const Home = () => {
                     </div>
                     <div className='home-card-text'>
                         <h2>15+ Godina sa Vama</h2>
-                        <p>Počevši od 2007. godine od samog osnivanja prenoćišta intenzivno vodimo računa kako bi gosti uvek imali najbolje ugostiteljsko iskustvo. Zato nam gosti daju njihovo poverenje iz godine u godinu.</p>
+                        <p>Od 2007. godine, stalno se trudimo da gosti imaju najbolje uslove i uslugu, zbog čega nam kontinuirano ukazuju poverenje.</p>
                     </div>
                 </div>
                 <div className="home-card">
@@ -47,8 +47,8 @@ const Home = () => {
                         <img src={location} alt="Lokacija" />
                     </div>
                     <div className='home-card-text'>
-                        <h2>Idealna Lokacija</h2>
-                        <p>Sobe Tintor se nalaze u zlatnoj sredini Apatina, u mirnoj ulici gde gosti imaju privatnost, ali takođe na 5 minuta od samog centra kao i Dunava.</p>
+                        <h2>Savršena Lokacija</h2>
+                        <p>Sobe Tintor nalaze se u mirnoj ulici, idealno smeštene između centra Apatina i Dunava, na samo 5 minuta od oba.</p>
                     </div>
                 </div>
                 <div className="home-card">
@@ -56,9 +56,10 @@ const Home = () => {
                         <img src={wifi} alt="Iskustvo" />
                     </div>
                     <div className='home-card-text'>
-                        <h2>Maksimalan Komfor</h2>
-                        <p>Sa wifi-jem koji pokriva celo imanje, velikim dvorištem, televizorima u svakoj sobi i velikim izborom društvenih igara, svako od 1 do 101 godine može da se zabavi i uživa.</p>
-                    </div>
+    <h2>Udobnost i Zajedništvo</h2>
+    <p>Uživajte u modernim sadržajima, prostranom dvorištu i opuštajućoj atmosferi za sve uzraste.</p>
+</div>
+
                 </div>
             </div>
         </div>

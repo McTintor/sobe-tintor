@@ -1,0 +1,50 @@
+.about-container {
+    width: 100%;
+    border-top: 1px solid #e0e0e0;
+    padding: 1rem 0;
+  }
+  
+  .about-text {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  .image-wrapper {
+    position: relative;
+    display: inline-block;
+    width: 400px; /* Updated size */
+    height: 400px; /* Updated size */
+  }
+  
+  .spinning-border {
+    position: absolute;
+    top: -5px; /* Adjust to match border width */
+    left: -5px;
+    width: 410px; /* Image size + border width */
+    height: 410px; /* Image size + border width */
+    border: 5px solid transparent;
+    border-radius: 50%;
+    background: conic-gradient(#ff7e5f, #feb47b, #ff7e5f);
+    animation: spin 3s linear infinite;
+    z-index: 0;
+  }
+  
+  .image-wrapper img {
+    width: 400px; /* Updated size */
+    height: 400px; /* Updated size */
+    border-radius: 50%;
+    position: relative;
+    z-index: 1; /* Ensures the image stays on top */
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
