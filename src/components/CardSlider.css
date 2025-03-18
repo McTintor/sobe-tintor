@@ -1,0 +1,47 @@
+.slider {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    border-radius: 0.5rem;
+}
+
+.review-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    border-radius: 0.5rem;
+    background-color: var(--color-white);
+    text-align: center;
+    border: 2px solid #e0e0e0;
+}
+
+.review-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+hr {
+    width: 60%;
+    margin: 1rem auto;
+    border: 0.5px solid #e0e0e0;
+}
+
+.review-text {
+    width: 80%;
+    margin: auto;
+    text-align: left;
+}
+
+.padder {
+
+    padding: 0 1rem;
+}

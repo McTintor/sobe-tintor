@@ -1,6 +1,5 @@
 .about-container {
     width: 100%;
-    border-top: 1px solid #e0e0e0;
     padding: 1rem 0;
   }
   
@@ -15,16 +14,16 @@
   .image-wrapper {
     position: relative;
     display: inline-block;
-    width: 400px; /* Updated size */
-    height: 400px; /* Updated size */
+    width: 400px;
+    height: 400px;
   }
   
   .spinning-border {
     position: absolute;
-    top: -5px; /* Adjust to match border width */
+    top: -5px;
     left: -5px;
-    width: 410px; /* Image size + border width */
-    height: 410px; /* Image size + border width */
+    width: 410px;
+    height: 410px;
     border: 5px solid transparent;
     border-radius: 50%;
     background: conic-gradient(#ff7e5f, #feb47b, #ff7e5f);
@@ -33,11 +32,15 @@
   }
   
   .image-wrapper img {
-    width: 400px; /* Updated size */
-    height: 400px; /* Updated size */
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
     position: relative;
-    z-index: 1; /* Ensures the image stays on top */
+    z-index: 1;
+  }
+
+  .align-center {
+    text-align: center;
   }
   
   @keyframes spin {

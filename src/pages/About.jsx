@@ -1,5 +1,6 @@
 import './About.css'
 import redhouse from '../assets/redhouse.png';
+import CardSlider from '../components/CardSlider';
 
 function About() {
   return (
@@ -11,8 +12,9 @@ function About() {
             <img src={redhouse} alt="Red House" />
         </div>
       </div>
+        <h1 className='align-center'>Pogledajte sta kazu gosti</h1>
       <div className="reviews">
-        <h1>Pogledajte sta kazu gosti</h1>
+        <CardSlider />
       </div>
     </div>
   );
