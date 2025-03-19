@@ -19,7 +19,7 @@ nav, footer {
   }
   
   .navbar:hover {
-    background-color: #f7f7f731;
+    background-color: #e0e0e0;
     transition: ease-in-out 0.3s;
   }
   

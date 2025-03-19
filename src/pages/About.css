@@ -4,11 +4,16 @@
   }
   
   .about-text {
-    width: 80%;
-    margin: auto;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    background-color: #e0e0e0;
+    padding: 5rem;
+  }
+
+  .about-text p {
+    width: 70%;
   }
   
   .image-wrapper {

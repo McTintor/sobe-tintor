@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-scroll'; // Import Link from react-scroll
 import './Navbar.css';
 
 function pageReload() {
@@ -9,7 +10,7 @@ const Navbar = () => {
     const [showNavbar, setShowNavbar] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    const [activeLink, setActiveLink] = useState('#pocetna');
+    const [activeLink, setActiveLink] = useState('pocetna'); // Updated to match section names
 
     useEffect(() => {
         const handleScroll = () => {
@@ -26,9 +27,9 @@ const Navbar = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     };
 
-    const handleLinkClick = (hash) => {
-        setActiveLink(hash);
-        setIsMobileMenuOpen(false);
+    const handleSetActive = (section) => {
+        console.log('Active section:', section);
+        setActiveLink(section); // Update active link when scrolling
     };
 
     return (
@@ -36,17 +37,81 @@ const Navbar = () => {
             <div className='navbar-logo'>
                 <img src="/logo.png" alt="Logo" onClick={pageReload} />
                 <h3><i>Sobe Tintor</i></h3>
-                
             </div>
             <button className="hamburger-menu" onClick={toggleMobileMenu}>
-                    ☰
-                </button>
+                ☰
+            </button>
             <ul className={`navbar-links ${isMobileMenuOpen ? "open" : ""}`}>
-                <li><a href="#pocetna" className={activeLink === '#pocetna' ? 'active' : ''} onClick={() => handleLinkClick('#pocetna')}>Početna</a></li>
-                <li><a href="#onama" className={activeLink === '#onama' ? 'active' : ''} onClick={() => handleLinkClick('#onama')}>O nama</a></li>
-                <li><a href="#galerija" className={activeLink === '#galerija' ? 'active' : ''} onClick={() => handleLinkClick('#galerija')}>Galerija</a></li>
-                <li><a href="#cenovnik" className={activeLink === '#cenovnik' ? 'active' : ''} onClick={() => handleLinkClick('#cenovnik')}>Cenovnik</a></li>
-                <li><a href="#kontakt" className={activeLink === '#kontakt' ? 'active' : ''} onClick={() => handleLinkClick('#kontakt')}>Kontakt</a></li>
+                <li>
+                    <Link
+                        to="pocetna"
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        offset={-70} // Adjust for navbar height
+                        onSetActive={handleSetActive}
+                        className={activeLink === 'pocetna' ? 'active' : ''}
+                        onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                        Početna
+                    </Link>
+                </li>
+                <li>
+                    <Link
+                        to="onama"
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        offset={70} // Adjust for navbar height
+                        onSetActive={handleSetActive}
+                        className={activeLink === 'onama' ? 'active' : ''}
+                        onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                        O nama
+                    </Link>
+                </li>
+                <li>
+                    <Link
+                        to="galerija"
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        offset={-70} // Adjust for navbar height
+                        onSetActive={handleSetActive}
+                        className={activeLink === 'galerija' ? 'active' : ''}
+                        onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                        Galerija
+                    </Link>
+                </li>
+                <li>
+                    <Link
+                        to="cenovnik"
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        offset={-70} // Adjust for navbar height
+                        onSetActive={handleSetActive}
+                        className={activeLink === 'cenovnik' ? 'active' : ''}
+                        onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                        Cenovnik
+                    </Link>
+                </li>
+                <li>
+                    <Link
+                        to="kontakt"
+                        smooth={true}
+                        duration={500}
+                        spy={true}
+                        offset={-70} // Adjust for navbar height
+                        onSetActive={handleSetActive}
+                        className={activeLink === 'kontakt' ? 'active' : ''}
+                        onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                        Kontakt
+                    </Link>
+                </li>
             </ul>
         </nav>
     );
