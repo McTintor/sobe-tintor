@@ -28,8 +28,7 @@ const Navbar = () => {
     };
 
     const handleSetActive = (section) => {
-        console.log('Active section:', section);
-        setActiveLink(section); // Update active link when scrolling
+        setActiveLink(section);
     };
 
     return (
@@ -48,7 +47,6 @@ const Navbar = () => {
                         smooth={true}
                         duration={500}
                         spy={true}
-                        offset={-70} // Adjust for navbar height
                         onSetActive={handleSetActive}
                         className={activeLink === 'pocetna' ? 'active' : ''}
                         onClick={() => setIsMobileMenuOpen(false)}
@@ -62,7 +60,7 @@ const Navbar = () => {
                         smooth={true}
                         duration={500}
                         spy={true}
-                        offset={70} // Adjust for navbar height
+                        offset={70} 
                         onSetActive={handleSetActive}
                         className={activeLink === 'onama' ? 'active' : ''}
                         onClick={() => setIsMobileMenuOpen(false)}
@@ -76,7 +74,7 @@ const Navbar = () => {
                         smooth={true}
                         duration={500}
                         spy={true}
-                        offset={-70} // Adjust for navbar height
+                        offset={50}
                         onSetActive={handleSetActive}
                         className={activeLink === 'galerija' ? 'active' : ''}
                         onClick={() => setIsMobileMenuOpen(false)}

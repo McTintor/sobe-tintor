@@ -6,6 +6,7 @@
   .about-text {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
     background-color: #e0e0e0;
@@ -47,6 +48,11 @@
   .align-center {
     text-align: center;
   }
+
+  .reviews {
+    max-width: 95%;
+    margin: auto;
+  }
   
   @keyframes spin {
     0% {
@@ -55,4 +61,53 @@
     100% {
       transform: rotate(360deg);
     }
+  }
+
+  @media screen and (max-width: 768px) {
+    .about-text {
+      padding: 2rem;
+    }
+  
+    .about-text p {
+      width: 100%;
+    }
+  
+    .image-wrapper {
+      width: 300px;
+      height: 300px;
+    }
+  
+    .spinning-border {
+      width: 310px;
+      height: 310px;
+    }
+  
+    .image-wrapper img {
+      width: 300px;
+      height: 300px;
+    }
+    
+  }
+
+
+  @media screen and (max-width: 480px) {
+    .about-text {
+      padding: 1rem;
+    }
+  
+    .image-wrapper {
+      width: 200px;
+      height: 200px;
+    }
+  
+    .spinning-border {
+      width: 210px;
+      height: 210px;
+    }
+  
+    .image-wrapper img {
+      width: 200px;
+      height: 200px;
+    }
+    
   }

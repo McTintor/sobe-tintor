@@ -37,7 +37,7 @@ const CardSlider = () => {
         dots: false,
         infinite: true,
         autoplay: true,
-        autoplaySpeed: 8000,
+        autoplaySpeed: 5000,
         speed: 300,
         slidesToShow: 3,
         slidesToScroll: 1,
