@@ -12,7 +12,7 @@ function About() {
             <img src={redhouse} alt="Red House" />
         </div>
       </div>
-        <h1 className='align-center'>Pogledajte sta kazu gosti</h1>
+        <h1 className='align-center'>Pogledajte šta kažu gosti</h1>
       <div className="reviews">
         <CardSlider />
       </div>

@@ -71,8 +71,8 @@ function ImageSlider({ images }) {
         <ArrowBigRight aria-hidden />
       </button>
       <div className="cta-container">
-        <button>CTA 1</button>
-        <button>CTA 2</button>
+        <button>Cenovnik</button>
+        <button>Rezerviši</button>
       </div>
       <div
         className="dot-container"

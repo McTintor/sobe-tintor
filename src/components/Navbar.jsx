@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-scroll'; // Import Link from react-scroll
+import { Link } from 'react-scroll';
 import './Navbar.css';
 
 function pageReload() {
@@ -10,7 +10,7 @@ const Navbar = () => {
     const [showNavbar, setShowNavbar] = useState(true);
     const [lastScrollY, setLastScrollY] = useState(0);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    const [activeLink, setActiveLink] = useState('pocetna'); // Updated to match section names
+    const [activeLink, setActiveLink] = useState('pocetna');
 
     useEffect(() => {
         const handleScroll = () => {
@@ -84,25 +84,11 @@ const Navbar = () => {
                 </li>
                 <li>
                     <Link
-                        to="cenovnik"
-                        smooth={true}
-                        duration={500}
-                        spy={true}
-                        offset={-70} // Adjust for navbar height
-                        onSetActive={handleSetActive}
-                        className={activeLink === 'cenovnik' ? 'active' : ''}
-                        onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                        Cenovnik
-                    </Link>
-                </li>
-                <li>
-                    <Link
                         to="kontakt"
                         smooth={true}
                         duration={500}
                         spy={true}
-                        offset={-70} // Adjust for navbar height
+                        offset={-70}
                         onSetActive={handleSetActive}
                         className={activeLink === 'kontakt' ? 'active' : ''}
                         onClick={() => setIsMobileMenuOpen(false)}
