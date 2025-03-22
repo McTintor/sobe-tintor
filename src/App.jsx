@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Gallery from './pages/Gallery'
 import Contact from './pages/Contact'
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function App() {
 

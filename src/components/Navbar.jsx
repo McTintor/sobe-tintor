@@ -45,7 +45,7 @@ const Navbar = () => {
                     <Link
                         to="pocetna"
                         smooth={true}
-                        duration={500}
+                        duration={100}
                         spy={true}
                         onSetActive={handleSetActive}
                         className={activeLink === 'pocetna' ? 'active' : ''}
@@ -58,7 +58,7 @@ const Navbar = () => {
                     <Link
                         to="onama"
                         smooth={true}
-                        duration={500}
+                        duration={100}
                         spy={true}
                         offset={70} 
                         onSetActive={handleSetActive}
@@ -72,7 +72,7 @@ const Navbar = () => {
                     <Link
                         to="galerija"
                         smooth={true}
-                        duration={500}
+                        duration={100}
                         spy={true}
                         offset={50}
                         onSetActive={handleSetActive}
@@ -86,9 +86,9 @@ const Navbar = () => {
                     <Link
                         to="kontakt"
                         smooth={true}
-                        duration={500}
+                        duration={100}
                         spy={true}
-                        offset={-70}
+                        offset={70}
                         onSetActive={handleSetActive}
                         className={activeLink === 'kontakt' ? 'active' : ''}
                         onClick={() => setIsMobileMenuOpen(false)}

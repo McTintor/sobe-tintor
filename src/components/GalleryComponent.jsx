@@ -39,7 +39,7 @@ const GalleryComponent = ({galleryImages}) => {
   }
 
   return (
-    <div>
+    <>
 
       {openModal && 
         <div className='sliderWrap'>
@@ -47,16 +47,16 @@ const GalleryComponent = ({galleryImages}) => {
           <FontAwesomeIcon icon={faCircleChevronLeft} className='btnPrev' onClick={prevSlide} />
           <FontAwesomeIcon icon={faCircleChevronRight} className='btnNext' onClick={nextSlide} />
           <div className='fullScreenImage'>
-            <img src={galleryImages[slideNumber].img} alt='' />
+            <img src={galleryImages[slideNumber].img} alt='Image' />
+          </div>
+          <br /><br /><br />
+          <div className="imageNum">
+            {slideNumber + 1} / {galleryImages.length}
           </div>
         </div>
       }
 
-      {/* <br />
-      Current slide number:  {slideNumber}
-      <br />
-      Total Slides: {galleryImages.length}
-      <br /><br /> */}
+       
 
       <div className='galleryWrap'>
         {
@@ -74,7 +74,7 @@ const GalleryComponent = ({galleryImages}) => {
         }
       </div>
 
-    </div>
+    </>
   )
 }
 
