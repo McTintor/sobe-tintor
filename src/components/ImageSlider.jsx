@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import { useState, useEffect } from "react";
 import { ArrowBigLeft, ArrowBigRight, Circle, CircleDot } from "lucide-react";
 import "./ImageSlider.css";
@@ -71,8 +72,21 @@ function ImageSlider({ images }) {
         <ArrowBigRight aria-hidden />
       </button>
       <div className="cta-container">
-        <button>Cenovnik</button>
-        <button>Rezerviši</button>
+      <a
+        href="/Cenovnik.pdf"
+        download="Cenovnik.pdf"
+        className="btn"
+      >
+    Cenovnik
+  </a>
+        <Link
+          to="kontakt"
+          smooth={true}
+          duration={500}
+          className="btn"
+        >
+          Rezerviši
+        </Link>
       </div>
       <div
         className="dot-container"

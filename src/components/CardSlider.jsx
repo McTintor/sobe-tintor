@@ -59,52 +59,52 @@ const CardSlider = () => {
     <Slider {...settings} className="slider">
         <div className="padder">
         <div className="review-card">
-            <h3>Ime</h3>
+            <h3>Urmo M.</h3>
             <img src={male1} alt="Slide 1" />
             <h4>⭐⭐⭐⭐⭐</h4>
             <p>5/5</p>
             <hr />
-            <p className="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam explicabo error architecto quas unde praesentium eveniet reprehenderit voluptatibus. Beatae placeat animi minus eius, maiores cum. Aliquid laboriosam reprehenderit dicta sed?</p>
+            <p className="review-text">Nemam reči nikada nisam lepše spavao, mir i tišina.</p>
         </div>
         </div>
         <div className="padder">
         <div className="review-card">
-            <h3>Ime</h3>
+            <h3>Blagoje Risteski</h3>
             <img src={male2} alt="Slide 2" />
-            <h4>⭐⭐⭐⭐</h4>
-            <p>4/5</p>
+            <h4>⭐⭐⭐⭐⭐</h4>
+            <p>5/5</p>
             <hr />
-            <p className="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam explicabo error architecto quas unde praesentium eveniet reprehenderit voluptatibus. Beatae placeat animi minus eius, maiores cum. Aliquid laboriosam reprehenderit dicta sed?</p>
+            <p className="review-text"></p>
         </div>
         </div>
         <div className="padder">
         <div className="review-card">
-            <h3>Ime</h3>
+            <h3>Marica Sinti</h3>
             <img src={female1} alt="Slide 3" />
             <h4>⭐⭐⭐⭐⭐</h4>
             <p>5/5</p>
             <hr />
-            <p className="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam explicabo error architecto quas unde praesentium eveniet reprehenderit voluptatibus. Beatae placeat animi minus eius, maiores cum. Aliquid laboriosam reprehenderit dicta sed?</p>
+            <p className="review-text">Najbolji su :)</p>
         </div>
         </div>
         <div className="padder">
         <div className="review-card">
-            <h3>Ime</h3>
+            <h3>Saša Bakić</h3>
             <img src={male3} alt="Slide 4" />
-            <h4>⭐⭐⭐⭐⭐</h4>
-            <p>5/5</p>
-            <hr />
-            <p className="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam explicabo error architecto quas unde praesentium eveniet reprehenderit voluptatibus. Beatae placeat animi minus eius, maiores cum. Aliquid laboriosam reprehenderit dicta sed?</p>
-        </div>
-        </div>
-        <div className="padder">
-        <div className="review-card">
-            <h3>Ime</h3>
-            <img src={female2} alt="Slide 5" />
             <h4>⭐⭐⭐⭐</h4>
             <p>4/5</p>
             <hr />
-            <p className="review-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam explicabo error architecto quas unde praesentium eveniet reprehenderit voluptatibus. Beatae placeat animi minus eius, maiores cum. Aliquid laboriosam reprehenderit dicta sed?</p>
+            <p className="review-text"></p>
+        </div>
+        </div>
+        <div className="padder">
+        <div className="review-card">
+            <h3>Maja Pavković</h3>
+            <img src={female2} alt="Slide 5" />
+            <h4>⭐⭐⭐⭐⭐</h4>
+            <p>5/5</p>
+            <hr />
+            <p className="review-text"></p>
         </div>
         </div>
     </Slider>

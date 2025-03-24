@@ -20,6 +20,7 @@
     background-color: var(--color-white);
     text-align: center;
     border: 2px solid #e0e0e0;
+    min-height: 400px;
 }
 
 .review-card img {
