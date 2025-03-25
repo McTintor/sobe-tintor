@@ -66,11 +66,11 @@ const Contact = () => {
                       <div className="kontakt-info">
                         <p>☎️ Telefon: (+381)64/72-22-901</p>
                         <p>📧 E-Mail: zeljkatintor@gmail.com</p>
-                        <p>📍 Adresa: Ribarska 62 Apatin</p>
+                        <p>📍 Adresa: Ribarska 64 Apatin</p>
                       </div>
                       <div className="socials">
   <a
-    href="https://www.facebook.com/your-facebook-page"
+    href="https://www.facebook.com/profile.php?id=100010809193151"
     target="_blank"
     rel="noopener noreferrer"
     className="social-link"
@@ -78,7 +78,7 @@ const Contact = () => {
     <i className="fab fa-facebook-f"></i>
   </a>
   <a
-    href="https://www.instagram.com/your-instagram-page"
+    href="https://www.instagram.com/zeljkatintor/"
     target="_blank"
     rel="noopener noreferrer"
     className="social-link"

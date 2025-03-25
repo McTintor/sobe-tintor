@@ -8,7 +8,6 @@ import family from '../assets/family.png';
 import exp from '../assets/exp.png';
 import location from '../assets/location.jpg';
 import ImageSlider from '../components/ImageSlider';
-import ErrorBoundary from '../components/ErrorBoundary';
 
 const IMAGES = [
     { url: first, alt: "First" },
@@ -20,9 +19,7 @@ const Home = () => {
     return (
         <>
         <div className="home" aria-label='Home'>
-            <ErrorBoundary>
-                <ImageSlider images={IMAGES} />
-            </ErrorBoundary>
+            <ImageSlider images={IMAGES} />
             <div className="home-cards">
                 <div className="home-card">
                     <div className="img-card">
