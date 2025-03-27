@@ -54,8 +54,9 @@ sobe-tintor/
 ├── .env                      # Environment variables for EmailJS
 ├── .gitignore                # Git ignore file
 ├── sitemap.xml               # Sitemap for SEO
-├── [README.md](http://_vscodecontentref_/1)                 # Project documentation
-└── [package.json](http://_vscodecontentref_/2) 
+├── README.md # Project documentation
+└── package.json 
+
 
 ---
 
@@ -86,4 +87,5 @@ Before running the project, ensure you have the following installed:
     ```bash
     npm run dev
 5. Open the app in your browser:
+    ```bash
     http://localhost:5173
