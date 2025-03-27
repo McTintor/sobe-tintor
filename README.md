@@ -56,7 +56,7 @@ sobe-tintor/
 ├── sitemap.xml               # Sitemap for SEO
 ├── README.md # Project documentation
 └── package.json 
-
+```
 
 ---
 
