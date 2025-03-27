@@ -3,7 +3,7 @@
 Welcome to the **Sobe Tintor** project! This is a React-based website built with Vite, designed to showcase and promote **Sobe Tintor**, a comfortable accommodation option in Apatin. The website provides information about the rooms, pricing, and contact details, along with a gallery and a reservation form.
 
 ### 🌐 Live Demo
-Check out the live version of the website here: Sobe Tintor
+Check out the live version of the website here: [Sobe Tintor](https://sobetintor.netlify.app/)
 
 ---
 
@@ -31,8 +31,31 @@ Check out the live version of the website here: Sobe Tintor
 ---
 
 ## 📂 Project Structure
-sobe-tintor/ ├── public/ │ ├── cenovnik.pdf # Pricing list PDF │ ├── logo.png # Favicon and logo │ └── robots.txt # Robots.txt file for SEO ├── src/ │ ├── assets/ # Static assets (images, etc.) │ ├── components/ # Reusable React components │ │ ├── Navbar.jsx # Navigation bar │ │ ├── ImageSlider.jsx # Image slider component │ │ └── Footer.jsx # Footer component │ ├── pages/ # Page components │ │ ├── Home.jsx # Home page │ │ ├── Gallery.jsx # Gallery page │ │ └── Contact.jsx # Contact page with form │ ├── App.jsx # Main app component │ ├── main.jsx # Entry point │ └── index.css # Global styles ├── .env # Environment variables for EmailJS ├── .gitignore # Git ignore file ├── sitemap.xml # Sitemap for SEO ├── README.md # Project documentation └── package.json # Project dependencies and scripts
 
+```plaintext
+sobe-tintor/
+├── public/
+│   ├── cenovnik.pdf          # Pricing list PDF
+│   ├── logo.png              # Favicon and logo
+│   └── robots.txt            # Robots.txt file for SEO
+├── src/
+│   ├── assets/               # Static assets (images, etc.)
+│   ├── components/           # Reusable React components
+│   │   ├── Navbar.jsx        # Navigation bar
+│   │   ├── ImageSlider.jsx   # Image slider component
+│   │   └── Footer.jsx        # Footer component
+│   ├── pages/                # Page components
+│   │   ├── Home.jsx          # Home page
+│   │   ├── Gallery.jsx       # Gallery page
+│   │   └── Contact.jsx       # Contact page with form
+│   ├── App.jsx               # Main app component
+│   ├── main.jsx              # Entry point
+│   └── index.css             # Global styles
+├── .env                      # Environment variables for EmailJS
+├── .gitignore                # Git ignore file
+├── sitemap.xml               # Sitemap for SEO
+├── [README.md](http://_vscodecontentref_/1)                 # Project documentation
+└── [package.json](http://_vscodecontentref_/2) 
 
 ---
 
@@ -49,7 +72,7 @@ Before running the project, ensure you have the following installed:
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/sobe-tintor.git
+   git clone https://github.com/McTintor/sobe-tintor.git
    cd sobe-tintor
 2. Install dependencies:
     ```bash
